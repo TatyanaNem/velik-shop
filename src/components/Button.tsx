@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { Radius } from "../tokens/radiuses";
 import { Color } from "../tokens/colors";
 import { Shadow } from "../tokens/shadows";
+import { BaseButton } from "../helpers/base-button";
 
 const ButtonSize = {
 	MEDIUM: 'medium',
@@ -71,17 +72,18 @@ const ButtonColorToCss = {
 	`
 }
 
-const StyledButton = styled.button.attrs<ButtonProps>(({type, size, color, variant}) => ({
-	type: type || 'button',
+const StyledButton = styled(BaseButton).attrs<ButtonProps>(({size, color, variant}) => ({
 	size: size || 'medium',
 	color: color || 'green',
 	variant: variant || 'outlined'
 }))`
-  font-size: 16px;
-  line-height: 22px;
-  color: ${Color.WHITE};
+	display: inline-flex;
+  	align-items: center;
+  	gap: 4px;
+	font-size: 16px;
+	line-height: 22px;
+  	color: ${Color.WHITE};
 	border-radius: ${Radius.RADIUS_4};
-  cursor: pointer;
 	box-shadow: ${Shadow.CHILD_DEFAULT};
 	${({size}) => size && ButtonSizeToCSS[size]};
 	${({color}) => color && ButtonColorToCss[color]};

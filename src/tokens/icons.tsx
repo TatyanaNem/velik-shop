@@ -1,22 +1,22 @@
 import styled from 'styled-components';
 
-const IconName = {
-  ARROW_RIGHT: 'arrow-right',
-  BAR_CHART_SMALL: 'bar-chart-small',
-  BAR_CHART: 'bar-chart',
-  BIKE_ADULT: 'bike-adult',
-  BIKE_CHILD: 'bike-child',
-  CHEVRON_DOWN: 'chevron-down',
-  FILTERS: 'filters',
-  HEART_SMALL: 'heart-small',
-  HEART: 'heart',
-  MENU: 'menu',
-  SEARCH: 'search',
-  SHOPPING_CART: 'shopping-cart',
-  TELEGRAM: 'telegram',
-  USER: 'user',
-  VK: 'vk',
-  YOUTUBE: 'youtube'
+enum IconName {
+  ARROW_RIGHT = 'arrow-right',
+  BAR_CHART_SMALL = 'bar-chart-small',
+  BAR_CHART = 'bar-chart',
+  BIKE_ADULT = 'bike-adult',
+  BIKE_CHILD = 'bike-child',
+  CHEVRON_DOWN = 'chevron-down',
+  FILTERS = 'filters',
+  HEART_SMALL = 'heart-small',
+  HEART = 'heart',
+  MENU = 'menu',
+  SEARCH = 'search',
+  SHOPPING_CART = 'shopping-cart',
+  TELEGRAM = 'telegram',
+  USER = 'user',
+  VK = 'vk',
+  YOUTUBE = 'youtube'
 };
 
 const StyledSpriteWithIcons = styled.svg`

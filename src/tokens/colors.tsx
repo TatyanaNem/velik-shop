@@ -1,22 +1,22 @@
 import { createGlobalStyle } from "styled-components"
 
-const Color = {
-    WHITE: 'var(--color-white)',
-    ORANGE_10: 'var(--color-orange-10)',
-    ORANGE_20: 'var(--color-orange-20)',
-    ORANGE_30: 'var(--color-orange-30)',
-    ORANGE_40: 'var(--color-orange-40)',
-    GREEN_10: 'var(--color-green-10)',
-    GREEN_20: 'var(--color-green-20)',
-    GREEN_30: 'var(--color-green-30)',
-    GREEN_40: 'var(--color-green-40)',
-    GRAY_10: 'var(--color-gray-10)',
-    GRAY_20: 'var(--color-gray-20)',
-    GRAY_30: 'var(--color-gray-30)',
-    GRAY_40: 'var(--color-gray-40)',
-    GRAY_50: 'var(--color-gray-50)',
-    GRAY_60: 'var(--color-gray-60)',
-    GRAY_70: 'var(--color-gray-70)'
+enum Color {
+    WHITE = 'var(--color-white)',
+    ORANGE_10 = 'var(--color-orange-10)',
+    ORANGE_20 = 'var(--color-orange-20)',
+    ORANGE_30 = 'var(--color-orange-30)',
+    ORANGE_40 = 'var(--color-orange-40)',
+    GREEN_10 = 'var(--color-green-10)',
+    GREEN_20 = 'var(--color-green-20)',
+    GREEN_30 = 'var(--color-green-30)',
+    GREEN_40 = 'var(--color-green-40)',
+    GRAY_10 = 'var(--color-gray-10)',
+    GRAY_20 = 'var(--color-gray-20)',
+    GRAY_30 = 'var(--color-gray-30)',
+    GRAY_40 = 'var(--color-gray-40)',
+    GRAY_50 = 'var(--color-gray-50)',
+    GRAY_60 = 'var(--color-gray-60)',
+    GRAY_70 = 'var(--color-gray-70)'
 }
 
 const GlobalColors = createGlobalStyle`
