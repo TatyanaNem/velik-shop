@@ -3,7 +3,7 @@ import { IconName } from "../tokens/icons";
 import { Color } from "../tokens/colors";
 
 type IconProps = {
-color?: Color | 'currentColor'
+color?: Color
 name: IconName
 className?: string
 size: IconSize
@@ -26,7 +26,7 @@ const IconSizeToCSS = {
 };
 
 const StyledIcon = styled.svg.attrs<IconProps>(({color}) => ({
-    color: color || 'currentColor',
+    color: color || Color.ORANGE_30,
     }))`
         ${({name}) => name};
         ${({size}) => IconSizeToCSS[size]};

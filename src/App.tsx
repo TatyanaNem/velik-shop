@@ -2,6 +2,7 @@ import { Button } from "./components/Button"
 import { Icon, IconSize } from "./components/Icon";
 import { IconButton } from "./components/icon-button";
 import { Input } from "./components/input";
+import { Select } from "./components/select";
 import { TextButton, TextButtonSize } from "./components/text-button";
 import Toggle from "./components/toggle";
 import {Typography, TypographyVariant} from './components/Typography'
@@ -40,6 +41,14 @@ function App() {
       </IconButton>
       <Toggle label='Toggle'/>
       <Input placeholder='Введите пароль...'/>
+      <Typography as='h2' variant={TypographyVariant.TITLE_2}>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit possimus in atque blanditiis itaque ex repellendus error corporis et? Earum, nesciunt cupiditate. A fuga amet expedita animi voluptate molestias culpa.
+      </Typography>
+      <Select label='Выберите тип велосипеда'>
+        <option>Прогулочные</option>
+        <option>Трековые</option>
+        <option>Горные</option>
+      </Select>
     </>
   )
 }
