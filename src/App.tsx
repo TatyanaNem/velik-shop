@@ -1,6 +1,7 @@
 import { Button } from "./components/Button"
 import { Icon, IconSize } from "./components/Icon";
 import { IconButton } from "./components/icon-button";
+import { Input } from "./components/input";
 import { TextButton, TextButtonSize } from "./components/text-button";
 import Toggle from "./components/toggle";
 import {Typography, TypographyVariant} from './components/Typography'
@@ -38,6 +39,7 @@ function App() {
         <Icon name={IconName.MENU} size={IconSize.LARGE}/>
       </IconButton>
       <Toggle label='Toggle'/>
+      <Input placeholder='Введите пароль...'/>
     </>
   )
 }
