@@ -1,4 +1,5 @@
 import { Button } from "./components/Button"
+import { Filter } from "./components/filter";
 import { Icon, IconSize } from "./components/Icon";
 import { IconButton } from "./components/icon-button";
 import { Input } from "./components/input";
@@ -49,6 +50,11 @@ function App() {
         <option>Трековые</option>
         <option>Горные</option>
       </Select>
+      <Filter label='Фильтр'>
+        <option>Прогулочные</option>
+        <option>Трековые</option>
+        <option>Горные</option>
+      </Filter>
     </>
   )
 }
